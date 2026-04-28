@@ -26,7 +26,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: "Noto serif KR", serif;
       z-index: 20;
       background: #ffffff13;
       backdrop-filter: blur(2px);
@@ -43,6 +42,7 @@
       font-size: 36px;
       line-height: 1;
       letter-spacing: -0.04em;
+      font-family: "Noto serif KR", serif;
       cursor: pointer;
       user-select: none;
     }
@@ -55,6 +55,7 @@
       background: transparent;
       font: inherit;
       font-size: 16px;
+      font-style: "Times New Roman", serif;
       text-decoration: underline;
       cursor: pointer;
       padding: 8px 0;
@@ -148,7 +149,7 @@
 
     .credit {
     font-size: 16px;
-    font-family: "Noto serif KR", serif;
+    font-style: "Times New Roman", serif;
     line-height: 1.4;
     color: #000000;
     text-align: center;
@@ -156,11 +157,7 @@
     margin-top: 160px;
     border-top: 1px solid #1111111b;
     }
-    
-.photo-card img.rotate-left {
-  transform: rotate(-90deg);
-  transform-origin: center;
-}
+
 
     @media (max-width: 768px) {
     header {
@@ -178,7 +175,7 @@
     right: 20px;
     bottom: 12px;
     font-size: 14px;
-    font-family: "Noto Serif KR", serif;
+    font-family: "Times New Roman", serif;
     text-decoration: underline;
 
   }
@@ -224,7 +221,6 @@
     margin-top: 80px;
   }
 }
-
   </style>
 </head>
 <body>
@@ -335,11 +331,7 @@ let photoCount = 0;
         shuffleGallery();
         });
 
-        const rotatedImages = [12, 13, 15, 17];
-
-      if (rotatedImages.includes(i)) {
-        img.classList.add('rotate-left');
-      }
+        
   </script>
 </body>
 <footer class="credit">
